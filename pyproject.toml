@@ -1,29 +1,25 @@
 [project]
 name = "ulauncher-cursor-recent"
-version = "0.1.0"
+version = "0.1.1"
 description = "Open recent Cursor folders and files using Ulauncher"
 authors = [
-    "GEkuL <42621207+GEkuL@users.noreply.github.com>",
-    "Mihir Chaturvedi <plibither8@gmail.com>"
+    { name = "GEkuL", email = "42621207+GEkuL@users.noreply.github.com" },
+    { name = "Mihir Chaturvedi", email = "plibither8@gmail.com" },
+    { name = "slimneotech", email = "22907654+slimneotech@users.noreply.github.com" }
 ]
-license = "MIT"
+license = { text = "MIT" }
 readme = "README.md"
-python = "^3.6"
-homepage = "https://github.com/gekul/ulauncher-cursor-recent"
-repository = "https://github.com/gekul/ulauncher-cursor-recent"
-documentation = "https://github.com/gekul/ulauncher-cursor-recent"
-
 keywords = ["ulauncher", "extension", "code", "cursor"]
-
 classifiers = [
     "Topic :: Desktop Environment"
 ]
 
-# Requirements
-[dev-dependencies]
-black = { version = "^18.3-alpha.0", python = "^3.6" }
+[project.urls]
+homepage = "https://github.com/slimneotech/ulauncher-cursor-recent"
+repository = "https://github.com/slimneotech/ulauncher-cursor-recent"
+documentation = "https://github.com/slimneotech/ulauncher-cursor-recent"
 
 [tool.black]
 line-length = 88
-target_version = ['py36']
+target-version = ["py36"]
 include = '\.pyi?$'

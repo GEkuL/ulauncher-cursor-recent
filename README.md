@@ -4,9 +4,21 @@
 
 Quickly open recently-opened Cursor project directories and files.
 
-**[Cursor](https://www.cursor.com/)** is a fork of VS Code enhaced with AI features developed by [Anysphere](https://anysphere.inc/).
+**Fork History**
 
-This Ulauncher plugin is a fork of [*ulauncher-vscode-recent*](https://github.com/plibither8/ulauncher-vscode-recent) by [**plibither8**](https://github.com/plibither8/ulauncher-vscode-recent) to support Cursor as opposed to vanila VS Code.
+This extension [slimneotech/ulauncher-cursor-recent](https://github.com/slimneotech/ulauncher-cursor-recent) is a fork of [GEkuL/ulauncher-cursor-recent](https://github.com/GEkuL/ulauncher-cursor-recent) (**GEkuL**), which itself is a fork of [plibither8/ulauncher-vscode-recent](https://github.com/plibither8/ulauncher-vscode-recent) (**plibither8**) to support Cursor as opposed to vanilla VS Code.
+
+<p align="left">
+  <img src="images/forkceptions.png" style="height:500px;"/>
+</p>
+
+
+**New:**
+- thefuzz or fuzzywuzzy is now an optional dependency
+- Supports disabling no match actions
+- Supports excluding paths
+
+**[Cursor](https://www.cursor.com/)** is a fork of VS Code enhaced with AI features developed by [Anysphere](https://anysphere.inc/).
 
 ## Install
 
@@ -14,8 +26,10 @@ This Ulauncher plugin is a fork of [*ulauncher-vscode-recent*](https://github.co
 
 - [Ulauncher 5](https://ulauncher.io/)
 - Python >= 3
-- `fuzzywuzzy` module.
-  Install this using `pip`: `pip install fuzzywuzzy`
+
+### Optional requirement
+- `thefuzz` or `fuzzywuzzy` module.
+  Install this using `pip`: `pip install thefuzz` or `pip install fuzzywuzzy`
 
 ### Steps
 
@@ -55,6 +69,13 @@ This extension should now be set up and work.
 ## Usage
 
 Default keyword to trigger this extension is **`r`**. This can be changed in the preferences.
+
+### Options
+
+- **Trigger keyword (`code_kw`)**: The keyword to activate this extension in Ulauncher. Default is `r`.
+- **Excluded environment variables (`excluded_env_vars`)**: Comma-separated list of environment variables to remove when starting Cursor (e.g., `PYTHONPATH`).
+- **Create File Option (`create_file`)**: If set to Yes, allows you to create a new file or open a path directly from the query if it doesn't match a recent entry.
+- **Exclude Directory (`exclude_dir`)**: Comma-separated list of directory substrings. Any recent file or folder whose path contains one of these substrings will be excluded from the results.
 
 ## License
 

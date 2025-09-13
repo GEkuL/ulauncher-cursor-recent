@@ -3,7 +3,7 @@
 	"name": "Cursor Recent",
 	"description": "Quickly open recently-opened Cursor project directories and files",
 
-	"developer_name": "GEkuL",
+	"developer_name": "plibither8, GEkuL, slimneotech",
 	"icon": "images/icon.svg",
 	"preferences": [
 		{
@@ -16,6 +16,21 @@
 			"id": "excluded_env_vars",
 			"type": "input",
 			"name": "Comma seperated list of env vars to remove when starting cursor, e.g. PYTHONPATH"
+		},
+		{
+			"id": "create_file",
+			"type": "select",
+			"name": "Create File Option",
+			"default_value": true,
+			"options": [
+				{ "value": "true", "text": "Yes" },
+				{ "value": "false", "text": "No" }
+			]
+		},
+		{
+			"id": "exclude_dir",
+			"type": "input",
+			"name": "Exclude Directory (comma separated)"
 		}
 	]
 }
